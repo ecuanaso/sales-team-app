@@ -1,0 +1,97 @@
+<template name="editBusiness">
+	<form class="form-horizontal">
+		<fieldset>
+
+		<!-- Form Name -->
+		{{# with business }}
+		<legend class="text-center">Updating {{ name }} </legend>
+		
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="bname">BUSINESS NAME</label>  
+		  <div class="col-md-4">
+		  <input id="bname" name="bname" type="text" placeholder="{{ name }}" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Select Basic -->
+<!-- 		<div class="form-group">
+		  <label class="col-md-4 control-label" for="PTYPE">PROJECT TYPE</label>
+		  <div class="col-md-4">
+		    <select id="PTYPE" name="PTYPE" class="form-control">
+		      <option value="1">ROADS AND BUILDINGS</option>
+		      <option value="2">ELECTRICITY</option>
+		      <option value="3">MEDICAL</option>
+		      <option value="4">SAFETY AND CLEANING</option>
+		    </select>
+		  </div>
+		</div> -->
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="vsm">VOUCHER SHORT MESSAGE</label>  
+		  <div class="col-md-4">
+		  <input id="vsm" name="vsm" type="text" placeholder="{{ vouchershortmessage }}" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="vlm">VOUCHER LONG MESSAGE</label> 
+
+		 
+
+
+		  <div class="col-md-4">
+		  	<textarea class="form-control" rows="5" id="vlm" name="vlm">{{ voucherlongmessage }}</textarea>
+		  
+		  <!-- <input id="vlm" name="vlm" type="text" placeholder="{{ voucherlongmessage }}" class="form-control input-md" required=""> -->
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="vv">VOUCHER VALUE</label>  
+		  <div class="col-md-4">
+		  <input id="vv" name="vv" type="text" placeholder="{{ vouchervalue }}" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="vr">VOUCHER REMAINED</label>  
+		  <div class="col-md-4">
+		  <input id="vr" name="vr" type="text" placeholder="{{ Vouchersremained }}" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="cs">CONTRACT STATUS</label>  
+		  <div class="col-md-4">
+		  <input id="cs" name="cs" type="text" placeholder="{{ hasContract }}" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		{{/with }}
+
+		<!-- Button (Double) -->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="button1idFFF"></label>
+		  <div class="col-md-8">
+		    <button id="button1idFFF" name="button1idFFF" class="btn btn-dabl3">UPDATE</button>
+		    <button id="button2id" name="button2id" class="btn btn-danger">CANCEL</button>
+		  </div>
+		</div>
+
+		</fieldset>
+	</form>
+
+</template>

@@ -1,0 +1,64 @@
+<template name="search">
+	<div class="search">
+		<h2 class="text-center">Search</h2>
+
+        <br>
+
+        <div class="col-md-6 col-md-offset-3 col-sm-12">
+            {{> EasySearch.Input index=BusinessIndex attributes=inputAttrs noDocumentsOnEmpty=true }}
+
+            {{# EasySearch.IfSearching index=BusinessIndex }}
+              {{> spinner }}
+            {{ else }}
+
+                {{# EasySearch.IfNoResults index=BusinessIndex }}
+                  <div class="text-center">
+                    <br>
+                    <p>
+                      Sorry, no results with that search query, please try again.
+                    </p>
+                  </div>
+                {{/ EasySearch.IfNoResults }}
+
+
+            {{/ EasySearch.IfSearching }}
+            
+            {{# EasySearch.Each index=BusinessIndex }}
+            <div class='business-list'>
+                
+                <div class="single-business">
+                    <h3>{{ name }}</h3>
+                    <h4>Subheading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                    <a class="btn btn-dabl3" href="{{ pathFor 'editBusiness' _id=__originalId }}">Edit Details</a>
+                </div>  
+
+            </div>
+            {{/ EasySearch.Each }}
+        </div>
+
+
+		
+
+
+        
+        <!-- <div class="col-md-1 col-sm-3 col-xs-3">
+        	<a href="{{ pathFor 'products.show' _id=__originalId }}">
+            	<img class="product_search img-responsive" src="{{ image.url }}" alt="" style="display:block;">
+            </a>
+        </div>
+
+        <div class="col-md-11 col-sm-9 col-xs-9">
+			<h3><a class="color_title" href="{{ pathFor 'products.show' _id=__originalId }}">{{ name }}</a></h3>
+        </div>
+
+        
+        <p>{{ truncateDesc }}</p>
+        <hr/> -->
+
+
+
+    	
+        
+	</div>
+</template>
