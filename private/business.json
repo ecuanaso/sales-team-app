@@ -1,7 +1,7 @@
 {
   "business":
   [
-    { "_id": "1", 
+    { "_id": "1",
       "name": "Business 1",
       "vouchershortmessage" : "Free Dessert",
       "voucherlongmessage" : "Deserts that you like from your local restaurant , enjoy a pista cake valued at $",
@@ -9,8 +9,8 @@
       "Vouchersremained" : "278",
       "hasContract":"true" 
     },
-    
-    { "_id": "2", 
+
+    {  "_id": "2",
       "name": "Business 2",
       "vouchershortmessage" : "Free Dessert",
       "voucherlongmessage" : "Deserts that you like from your local restaurant , enjoy a pista cake valued at $",
@@ -19,7 +19,7 @@
       "hasContract":"true"  
     },
 
-    { "_id": "3", 
+    {  "_id": "3",
       "name": "Business 3",
       "vouchershortmessage" : "Free Dessert",
       "voucherlongmessage" : "Deserts that you like from your local restaurant , enjoy a pista cake valued at $",
@@ -28,7 +28,7 @@
       "hasContract":"true"  
     },
 
-    { "_id": "4", 
+    {  "_id": "4",
       "name": "Business 4",
       "vouchershortmessage" : "Free Dessert",
       "voucherlongmessage" : "Deserts that you like from your local restaurant , enjoy a pista cake valued at $",
@@ -44,6 +44,6 @@
       "vouchervalue" : "5",
       "Vouchersremained" : "278",
       "hasContract":"true"  
-    },
+    }
   ]
 }

@@ -1,6 +1,7 @@
 Template.login.events({
-  'submit #loginForm':function(e){
-    e.preventDefault();
+  'submit #loginForm':function(event){
+    // Prevent default browser form submit
+    event.preventDefault();
 
     var username = $('[name=name]').val();
     var password = $('[name=password]').val();
